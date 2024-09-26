@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-const socket = new WebSocket("wss://192.168.31.248/")
+const socket = new WebSocket("wss://video-call-api.deno.dev/")
 
 const messages = ref<string[]>([])
 const localStream = ref<MediaStream | null>(null)
